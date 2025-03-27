@@ -1,0 +1,6 @@
+openai
+streamlit
+python-dotenv
+PyMuPDF
+gspread
+oauth2client

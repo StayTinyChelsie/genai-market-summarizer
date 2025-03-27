@@ -1,2 +1,1 @@
-# genai-market-summarizer
-LLM-powered tool that summarizes financial documents and classifies sentiment for faster decision-making.
+# GenAI Market Summarizer\n\nSee the main app folder for functionality. Upload financial docs or paste in content to get AI-generated summaries and sentiment analysis.
