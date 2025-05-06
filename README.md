@@ -1,50 +1,40 @@
-# GenAI Market Summarizer
+# GenAI Market Summarizer 🧠📊  
+*Powered by FinSight*
 
-## 👩‍💻 Author
-Chelsie Santos  
-EGR 404 – Generative AI Tools
+## 🚀 Overview
 
----
+**GenAI Market Summarizer** is an AI-powered financial app that streamlines market research, portfolio strategy, and financial reporting. Built using Python, Streamlit, OpenAI, and yFinance, it helps users—students, founders, and investors—analyze financial data, generate visual reports, and make smarter market decisions.
 
-## 🧠 Project Description  
-As someone who’s studied both AI and finance, I’ve noticed how overwhelming financial news and reports can be—especially when trying to make sense of it all quickly.  
-This tool uses large language models to summarize earnings transcripts, market news, and financial reports, while scoring their sentiment (bullish, neutral, bearish).  
-It also supports PDF uploads and exports results to Google Sheets.
+## 🔑 Key Features
 
----
+- **Live Financial Data Fetching** (yFinance, NYT, FRED, World Bank)
+- **Multi-Ticker Comparison** with AI-generated summaries
+- **Portfolio Tools:** Monte Carlo Simulation & Efficient Frontier Analysis
+- **Smart Chart Generation** (up to 80 chart types!)
+- **Export Options:** PowerPoint, Excel, PDF, and Google Sheets
+- **Preloaded & Uploadable Datasets** (e.g., SEC filings, cryptocurrency, treasury yields)
+- **NYT Financial Article Summarizer**
+- **Hedge Fund Strategy Assistant** and AI-driven investment tips
 
-## 🔧 Tools & Resources  
-- **APIs**: OpenAI GPT-4, Google Sheets API  
-- **Libraries**: Streamlit, PyMuPDF, gspread, LangChain (optional)  
-- **Data Sources**: Earnings reports, Yahoo Finance news  
-- **Labs Referenced**: Lab 5 (API + Sheets integration)
+## 🧩 App Structure
 
----
+- `main.py` — Core Streamlit app interface
+- `chart_logic.py` — Handles chart generation and formatting
+- `summary.py` — Summarizes text and financial insights using OpenAI
+- `fetch_dataset.py` — Pulls live and static datasets (yFinance, FRED, World Bank, etc.)
+- `exporter.py` — Exports to Excel, Google Sheets, PowerPoint, PDF
+- `presentation.py` — Builds AI-powered investor slides
+- `ui_handlers.py` — Manages dynamic input modes and UI flows
 
-## 📦 Deliverables & Timeline  
+## 🖥️ How to Run the App
 
-| Week | Milestone                                |
-|------|------------------------------------------|
-| 1–2  | Summarization + sentiment engine         |
-| 3    | Add PDF parsing + basic Streamlit UI     |
-| 4    | Google Sheets export + polish UI         |
-| 🔚   | Final Repo, Demo, Sample Outputs          |
+```bash
+# Clone the repository
+git clone https://github.com/your-username/GenAI-Market-Summarizer.git
+cd GenAI-Market-Summarizer
 
----
+# Install dependencies
+pip install -r requirements.txt
 
-## 🔗 GitHub Access
-Instructors added as collaborators:  
-- `sendag@uri.edu`  
-- `justin_watkins@uri.edu`
-
----
-
-## 📁 How to Use
-1. Clone the repo  
-2. Add your OpenAI key to `.env`  
-3. Run with `streamlit run app/main.py`  
-4. Paste financial text or upload a PDF  
-5. Click summarize → export to Sheets (optional)
-
----
-
+# Run the Streamlit app
+streamlit run main.py
